@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Taller.iml" filepath="$PROJECT_DIR$/Taller.iml" />
+      <module fileurl="file://C:\Users\Chaos\Desktop\Android\Taller\TallerAndroid_01\Taller.iml" filepath="C:\Users\Chaos\Desktop\Android\Taller\TallerAndroid_01\Taller.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TallerAndroid_01.iml" filepath="$PROJECT_DIR$/TallerAndroid_01.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
