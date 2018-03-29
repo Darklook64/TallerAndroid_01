@@ -4,11 +4,13 @@ import android.content.DialogInterface;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.Gravity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.Random;
 
@@ -34,6 +36,7 @@ public class Principal extends AppCompatActivity {
         imgVictoria = (ImageView) findViewById(R.id.imgVictoria);
         btnJugar = (Button) findViewById(R.id.btnJugar);
         btnVolverAJugar = (Button) findViewById(R.id.btnVolverAJugar);
+        btnVolverAJugar.setVisibility(View.INVISIBLE);
 
         // Llama al método que genera el número random.
         generarNumero();
@@ -68,6 +71,7 @@ public class Principal extends AppCompatActivity {
         // Carga imagen y label.
         lblMensaje.setText("¡Felicidades, ha ganado!");
         imgVictoria.setImageResource(R.drawable.oraora);
+        btnVolverAJugar.setVisibility(v);
 
         // Reproducir sonido de victoria.
         // !!
@@ -81,17 +85,33 @@ public class Principal extends AppCompatActivity {
     }
 
     public void subir() {
-        lblMensaje = (TextView) findViewById(R.id.lblMensaje);
-        lblMensaje.setText("¡Sube un poco más!");
+        //lblMensaje = (TextView) findViewById(R.id.lblMensaje);
+        //lblMensaje.setText("¡Sube un poco más!");
 
+
+        Toast mSubir =
+                Toast.makeText(getApplicationContext(),
+                        "¡Sube un poco más!", Toast.LENGTH_SHORT);
+
+        mSubir.setGravity(Gravity.CENTER|Gravity.LEFT,0,0);
+
+        mSubir.show();
         // Reproducir sonido de 'subir'.
         // !!
 
     }
 
     public void bajar() {
-        lblMensaje = (TextView) findViewById(R.id.lblMensaje);
-        lblMensaje.setText("¡Baja un poco más!");
+        //lblMensaje = (TextView) findViewById(R.id.lblMensaje);
+        //lblMensaje.setText("¡Baja un poco más!");
+
+        Toast mSubir =
+                Toast.makeText(getApplicationContext(),
+                        "¡Baja un poco más!", Toast.LENGTH_SHORT);
+
+        mSubir.setGravity(Gravity.CENTER|Gravity.LEFT,0,0);
+
+        mSubir.show();
 
         // Reproducir sonido de 'bajar'.
         // !!
