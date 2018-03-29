@@ -71,7 +71,7 @@ public class Principal extends AppCompatActivity {
         // Carga imagen y label.
         lblMensaje.setText("¡Felicidades, ha ganado!");
         imgVictoria.setImageResource(R.drawable.oraora);
-        btnVolverAJugar.setVisibility(v);
+        btnVolverAJugar.setVisibility(View.VISIBLE);
 
         // Reproducir sonido de victoria.
         // !!
